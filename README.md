@@ -16,7 +16,15 @@ Este proyecto de ejemplo crea con Terraform:
 
 ## Uso
 
-```bash
 terraform init
 terraform plan
 terraform apply -auto-approve
+
+Al finalizar, Terraform mostrará en la salida la IP pública de la instancia creada (instance_public_ip).
+
+## Destruir infraestructura
+
+Para evitar costos en la cuenta AWS, puede eliminarse todo con:
+
+terraform destroy -auto-approve
+
